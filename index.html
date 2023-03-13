@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lorem Ipsum</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class='app-bar'>
+
+    <div class='logo-div'>
+      <img src='logo.png' class='logo'>
+    </div>
+
+    <div class='hamb-button'>
+      <a href='#' id='hamb-button'>☰</a>
+    </div>
+
+    <div class='hamb-menu'>
+      <ul>
+        <li><a href=''>User info</a></li>
+        <li><a href=''>Banner</a></li>
+        <li><a href=''>Comentários</a></li>
+        <li><a href=''>Contato</a></li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class='banner'>
+    <a href='#' class='previous-icon'>
+      <div>
+        < </div>
+    </a>
+
+    <img src='https://loremflickr.com/256/512' id='banner-img'>
+
+    <a href='#' class='next-icon'>
+      <div> >
+      </div>
+    </a>
+
+  </div>
+
+  <div class='comments'>
+
+    <!-- Área dos comentarios -->
+    <h2>Comentários</h2>
+
+
+    <div class='comments-area' id="comments"></div>
+
+    <button id='reload-comments'>Novos Comentários</button>
+
+  </div>
+
+
+  <div class='contact' id='contact'>
+
+    <div class='form-title'>
+      <h2>Entrar em contato</h2>
+    </div>
+
+    <div class='form'>
+
+      <!-- <form method='post' action="https://getform.io/f/1ca01eb9-e467-488d-b2d2-f0df74c0f2df"> -->
+      <form method='post'>
+
+        <input type="hidden" name="_gotcha" style="display:none !important">
+
+        <div>
+          <input type="text" id='name' name='name' placeholder="nome" />
+          <spam id='name-error' class='error'></spam>
+        </div>
+
+        <div>
+          <input type='tel' id='phone' name='phone' placeholder="telefone" />
+          <spam id='phone-error' class='error'></spam>
+        </div>
+
+        <div>
+          <input type='email' id='email' name='email' placeholder="e-mail" />
+          <spam id='email-error' class='error'></spam>
+        </div>
+
+        <div>
+          <textarea name='message' id='message' name='message' placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <div class='submit'>
+          <input type='submit' id='submit' placeholder="enviar" />
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+  <footer>Projeto desenvolvido utilizando HTML, CSS e JavaScript</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
